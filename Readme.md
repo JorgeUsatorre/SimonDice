@@ -38,7 +38,7 @@ graph TD;
     Comprobar-->|SI|Secuencia
 
 ```
-
+ 
 
 
 
