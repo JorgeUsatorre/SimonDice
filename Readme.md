@@ -13,21 +13,32 @@ El proyecto está organizado en varios paquetes para mejorar la modularidad y la
 
 ## Diagramas
 
-### Diagrama de flujo:
+ Diagrama de flujo:
 
 graph TD
 
 I[INICIO] --> S[START]
+
 S --> V(ColoresEnv + Colores)
+
 V --> Aumentar[Aumentar color]
+
 Aumentar --> Vis[Visualizar Colores]
+
 Vis --> W[Wait Colores Pulsados]
+
 W --> Aumentar2[aumentarColorAEnviar]
+
 Aumentar2 --> CBoton{Boton enviar pulsado}
+
 CBoton --> |NO|W
+
 CBoton --> |SI|E[Enviar datos]
+
 E --> C{Colores==coloresEnviados}
+
 C --> |SI|+R[Aumentar Ronda] --> Aumentar
+
 C --> |NO| P[PERDISTE]
 
 ### Diagrama de estado:
