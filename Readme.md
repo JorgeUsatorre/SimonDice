@@ -11,6 +11,7 @@ El proyecto está organizado en varios paquetes para mejorar la modularidad y la
 
 - MainActivity: La actividad principal que configura y muestra la interfaz de usuario. Aquí se instancia el ViewModel.
 
+- La clase de datos, Data, se utiliza para almacenar y encapsular el estado actual de la aplicación. Se utiliza para proporcionar una forma concisa de representar y manipular los datos.
 ### Diagrama de flujo
 
 ```mermaid
